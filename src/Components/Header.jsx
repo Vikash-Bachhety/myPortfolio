@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import user from "../assets/logos/user.png"
+import user from "../assets/logos/user.png";
 
 function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -14,7 +14,7 @@ function Header() {
   };
 
   return (
-    <div className="drop fixed top-0 flex justify-between items-center tracking-wide bg-gray-950 bg-opacity-80 w-full text-white h-24 px-6 lg:px-20 z-20">
+    <div className="fixed top-0 left-0 right-0 flex justify-between items-center tracking-wide bg-gray-950 bg-opacity-80 w-full text-white h-24 px-6 lg:px-20 z-20">
       <div className="w-1/4 md:w-1/3 flex items-end gap-6">
         <img className="scale w-16 border-none rounded-full bg-transparent" src={user} alt="" />
         <span className="text-cyan-500 textMove">bachhetyv@gmail.com</span>

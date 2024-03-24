@@ -162,10 +162,10 @@
 
 @keyframes move {
   from {
-    transform: translateX(-10%);
+    transform: translateX(-5%);
   }
   to {
-    transform: translateX(10%);
+    transform: translateX(5%);
   }
 }
 
