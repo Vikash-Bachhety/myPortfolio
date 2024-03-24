@@ -14,7 +14,7 @@ function Header() {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 flex justify-between items-center tracking-wide bg-gray-950 bg-opacity-80 w-full text-white h-24 px-6 lg:px-20 z-20">
+    <div className="fixed top-0 left-0 right-0 flex justify-between items-center tracking-wide bg-black bg-opacity-90 w-full text-white h-24 px-6 lg:px-20 z-20">
       <div className="w-1/4 md:w-1/3 flex items-end gap-6">
         <img className="scale w-16 border-none rounded-full bg-transparent" src={user} alt="" />
         <span className="text-cyan-500 textMove">bachhetyv@gmail.com</span>
@@ -56,7 +56,7 @@ function Header() {
       </ul>
       {/* Dropdown menu for small screens */}
       {showDropdown && (
-        <div className="absolute top-full left-0 bg-black bg-opacity-20 w-full py-2">
+        <div className="absolute top-full left-0 bg-black bg-opacity-90 w-full py-2">
           <ul className="flex flex-col items-center">
             <Link to="/Home" className="hover:border-b-2 border-yellow-200 duration-300 mb-2" onClick={closeDropdown}>Home</Link>
             <Link to="/About" className="hover:border-b-2 border-yellow-200 duration-300 mb-2" onClick={closeDropdown}>About</Link>
