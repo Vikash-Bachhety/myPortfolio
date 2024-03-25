@@ -96,7 +96,7 @@ function Contact() {
               placeholder="Your Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="bg-gray-800 text-white py-2 px-3 lg:py-3 lg:px-4 rounded mb-3 lg:mb-4 w-full"
+              className="bg-gray-800 text-white py-2 px-3 lg:py-3 lg:px-4 rounded mb-3 lg:mb-4 w-full focus:outline-none"
               required
             />
             <input
@@ -105,7 +105,7 @@ function Contact() {
               placeholder="Your Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="bg-gray-800 text-white py-2 px-3 lg:py-3 lg:px-4 rounded mb-3 lg:mb-4 w-full"
+              className="bg-gray-800 text-white py-2 px-3 lg:py-3 lg:px-4 rounded mb-3 lg:mb-4 w-full focus:outline-none"
               required
             />
             <textarea
@@ -114,7 +114,7 @@ function Contact() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               rows="5"
-              className="bg-gray-800 text-white py-2 px-3 lg:py-3 lg:px-4 rounded mb-3 lg:mb-4 w-full"
+              className="bg-gray-800 text-white py-2 px-3 lg:py-3 lg:px-4 rounded mb-3 lg:mb-4 w-full focus:outline-none"
               required
             ></textarea>
             <button
