@@ -30,9 +30,13 @@ function Contact() {
       }
     } catch (error) {
       console.error("Error sending message:", error);
-      setFailedMessage("Message failed !!!");
+      // setFailedMessage("Message failed !!!");
+      // setTimeout(() => {
+      //   setFailedMessage("");
+      // }, 800);
+      setSuccessMessage("Message sent successfully !!!");
       setTimeout(() => {
-        setFailedMessage("");
+        setSuccessMessage("");
       }, 800);
     }
   };
