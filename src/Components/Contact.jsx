@@ -28,6 +28,12 @@ function Contact() {
         setMessage("");
         setName("");
       }
+      if (!message && !name && !email) {
+        setFailedMessage("Message failed !!!");
+        setTimeout(() => {
+          setFailedMessage("");
+        }, 800);
+      }
     } catch (error) {
       console.error("Error sending message:", error);
       // setFailedMessage("Message failed !!!");
