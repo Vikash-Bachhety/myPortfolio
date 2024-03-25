@@ -46,7 +46,7 @@ function Header() {
         </button>
       </div>
       <ul className={`hidden md:flex gap-x-4 text-lg w-1/2 h-24 justify-around items-center ${showDropdown ? "hidden" : ""}`}>
-        <Link to="/Home" className="w-24 text-center p-2 rounded-lg hover:bg-slate-300 hover:bg-opacity-20" onClick={closeDropdown}>Home</Link>
+        <Link to="/" className="w-24 text-center p-2 rounded-lg hover:bg-slate-300 hover:bg-opacity-20" onClick={closeDropdown}>Home</Link>
         <Link to="/About" className="w-24 text-center p-2 rounded-lg hover:bg-slate-300 hover:bg-opacity-20" onClick={closeDropdown}>About</Link>
         <Link to="/Skills" className="w-24 text-center p-2 rounded-lg hover:bg-slate-300 hover:bg-opacity-20" onClick={closeDropdown}>Skills</Link>
         <Link to="/Projects" className="w-24 text-center p-2 rounded-lg hover:bg-slate-300 hover:bg-opacity-20" onClick={closeDropdown}>Projects</Link>
