@@ -26,10 +26,10 @@ function Footer() {
         <div className="flex flex-col mt-10 md:mt-0 items-center md:items-start">
           <h3 className="text-lg font-semibold mb-4">Useful Links</h3>
           <ul className="list-disc pl-4">
-            <li><a href="/About">About Me</a></li>
-            <li><a href="/Skills">Skills</a></li>
-            <li><a href="/Projects">Projects</a></li>
-            <li><a href="/Contact">Connect</a></li>
+            <li><Link to="/About">About Me</Link></li>
+            <li><Link to="/Skills">Skills</Link></li>
+            <li><Link to="/Projects">Projects</Link></li>
+            <li><Link to="/Contact">Connect</Link></li>
           </ul>
         </div>
       </div>

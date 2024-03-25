@@ -55,7 +55,7 @@ function Header() {
       {showDropdown && (
         <div className="absolute top-full left-0 bg-black bg-opacity-90 w-full py-2">
           <ul className="flex flex-col items-center">
-            <Link to="/Home" className="hover:border-b-2 border-yellow-200 duration-300 mb-2" onClick={closeDropdown}>Home</Link>
+            <Link to="/" className="hover:border-b-2 border-yellow-200 duration-300 mb-2" onClick={closeDropdown}>Home</Link>
             <Link to="/About" className="hover:border-b-2 border-yellow-200 duration-300 mb-2" onClick={closeDropdown}>About</Link>
             <Link to="/Skills" className="hover:border-b-2 border-yellow-200 duration-300 mb-2" onClick={closeDropdown}>Skills</Link>
             <Link to="/Projects" className="hover:border-b-2 border-yellow-200 duration-300 mb-2" onClick={closeDropdown}>Projects</Link>

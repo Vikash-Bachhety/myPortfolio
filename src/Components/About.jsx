@@ -1,6 +1,7 @@
 import React from "react";
 import profilePic from "../assets/profilePic.jpg";
 import "../Components/component.css";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -34,12 +35,12 @@ function About() {
             dynamic projects that push the boundaries of user interface design.
           </p>
           <div className="mt-4 md:mt-12">
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-block bg-cyan-500 text-gray-900 duration-500 py-2 md:py-3 px-4 md:px-6 rounded-full uppercase tracking-wider font-semibold hover:bg-rose-500 hover:text-gray-100"
             >
               Get in Touch
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -109,7 +109,7 @@ function SkillCard({ skill }) {
   const { name, image, detail } = skill;
 
   return (
-    <div className="scale w-58 md:w-64 h-44 md:h-72 opacity-90 hover:opacity-100 hover:scale-110 duration-500 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-4 md:p-6">
+    <div className="scale w-60 md:w-64 h-44 md:h-72 opacity-90 hover:opacity-100 hover:scale-110 duration-500 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-4 md:p-6">
       <img src={image} alt={name} className="w-20 h-20 md:w-28 md:h-28 object-contain mb-4" />
       <p className="text-gray-800 font-semibold text-center text-sm md:text-lg">{name}</p>
       <p className="text-gray-800 font-semibold text-center text-xs md:text-sm">{detail}</p>
