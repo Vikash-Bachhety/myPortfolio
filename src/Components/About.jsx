@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 function About() {
   return (
     <section className="bg-gradient-to-r from-slate-800 to-gray-950 text-white py-12 md:py-20 min-h-screen w-full">
-      <div className="container mx-auto flex flex-col md:flex-row items-center md:tracking-wide md:leading-10 justify-center px-4 md:px-20 mt-12 md:mt-20">
-        <div className="md:w-1/2 px-4 md:px-8 md:-mt-6">
-          <div className="relative w-full md:w-96 h-60 md:h-[500px] p-8 shadow-xl shadow-red-600 border-2 rounded-t-full rounded-b-full border-blue-500 flex justify-center mb-6 md:mb-0 hover:-rotate-6">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center md:tracking-wide md:leading-10 justify-center px-4 md:px-20 mt-12 md:mt-20">
+        <div className="lg:w-1/2 px-4 md:px-8 md:-mt-6">
+          <div className="relative w-full md:w-96 h-60 md:h-[500px] p-8 shadow-xl shadow-red-600 border-2 rounded-t-full rounded-b-full border-blue-500 flex justify-center mb-6 md:mb-20 lg:mb-0 hover:-rotate-6">
             <img
               className="scale rounded-t-full rounded-b-full border-4 border-blue-500 shadow-lg shadow-blue-300 w-full md:w-80 h-52 md:h-[500px] object-cover"
               src={profilePic}
@@ -16,14 +16,14 @@ function About() {
             />
           </div>
         </div>
-        <div className="md:w-1/2 text-center md:text-left p-4 md:p-5 leading-loose">
-          <h2 className="drops text-3xl md:text-4xl font-bold mb-2 md:mb-4">
+        <div className="flex flex-col items-center md:w-full lg:w-1/2 text-center lg:text-left p-4 md:p-5 leading-loose">
+          <h2 className="drops text-3xl md:text-5xl lg:text-4xl font-bold mb-2 md:mb-4">
             Hi, I'm <span className="text-cyan-500">Vikash Bachhety,</span>
           </h2>
-          <p className="textMove text-base md:text-xl tracking-widest text-rose-500 mb-4 md:mb-10">
+          <p className="textMove text-base md:text-2xl lg:text-xl tracking-widest text-rose-500 mb-4 md:mb-10">
             Passionate Web Developer | Tech Enthusiast
           </p>
-          <p className="text-base text-gray-300 md:text-lg leading-loose">
+          <p className="text-base text-gray-300 md:text-2xl lg:text-lg leading-loose">
             Currently pursuing a Master's in Computer Applications with a keen
             interest in crafting seamless and engaging user experiences through
             front-end development. Proficient in HTML, CSS, and JavaScript,

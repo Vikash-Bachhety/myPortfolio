@@ -14,6 +14,7 @@ function Skills() {
       color: "#E44D26",
       detail:
         "HTML is the standard markup language for creating web pages and web applications.",
+      knowledge: "85%",
     },
     {
       name: "CSS",
@@ -21,6 +22,7 @@ function Skills() {
       color: "#264DE4",
       detail:
         "CSS is the language used for styling web pages and web applications.",
+      knowledge: "80%",
     },
     {
       name: "JavaScript",
@@ -28,20 +30,22 @@ function Skills() {
       color: "#F0DB4F",
       detail:
         "JavaScript is the programming language used to make web pages interactive.",
+      knowledge: "70%",
     },
     {
       name: "React",
       image: react,
       color: "#61DAFB",
-      detail:
-        "React is a JavaScript library for building user interfaces.",
+      detail: "React is a JavaScript library for building user interfaces.",
+      knowledge: "60%",
     },
     {
       name: "Node.js",
       image: node,
       color: "#68A063",
       detail:
-        "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine for building scalable network applications.",
+        "Node.js is a JavaScript runtime for building scalable network applications.",
+      knowledge: "60%",
     },
     {
       name: "Mongoose",
@@ -49,6 +53,7 @@ function Skills() {
       color: "#47A248",
       detail:
         "Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js.",
+      knowledge: "65%",
     },
   ];
 
@@ -67,7 +72,7 @@ function Skills() {
       <h1 className="drops text-white font-extrabold tracking-widest text-3xl md:text-4xl mt-32 md:mt-32 mb-4">
         My Skills
       </h1>
-      <p className="textMove text-white font-medium tracking-wider text-base md:text-lg text-center px-4 mb-6 md:mb-12 max-w-2xl">
+      <p className="textMove text-white font-medium tracking-wider text-base md:text-lg text-center px-4 mb-6 max-w-2xl">
         Welcome to the Skills section, where I showcase the diverse range of
         tools and technologies I work with. Explore the cards below to learn
         more about my expertise.
@@ -77,9 +82,9 @@ function Skills() {
           <SkillCard key={startIndex + index} skill={skill} />
         ))}
       </div>
-      <div className="flex mt-8 justify-between gap-6">
+      <div className="flex mt-10 justify-between gap-6">
         <button
-          className={`ml-auto p-2 md:p-4 rounded-full ${
+          className={`ml-auto p-2 rounded-full ${
             startIndex === 0
               ? "bg-gray-400 cursor-not-allowed"
               : "bg-gray-300 hover:bg-gray-400"
@@ -90,7 +95,7 @@ function Skills() {
           {"<"}
         </button>
         <button
-          className={`mr-auto p-2 md:p-4 rounded-full ${
+          className={`mr-auto p-2 rounded-full ${
             startIndex >= skills.length - 4
               ? "bg-gray-400 cursor-not-allowed"
               : "bg-gray-300 hover:bg-gray-400"
@@ -106,13 +111,25 @@ function Skills() {
 }
 
 function SkillCard({ skill }) {
-  const { name, image, detail } = skill;
+  const { name, image, detail, knowledge } = skill;
 
   return (
-    <div className="scale w-60 md:w-64 h-44 md:h-72 opacity-90 hover:opacity-100 hover:scale-110 duration-500 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-4 md:p-6">
-      <img src={image} alt={name} className="w-20 h-20 md:w-28 md:h-28 object-contain mb-4" />
-      <p className="text-gray-800 font-semibold text-center text-sm md:text-lg">{name}</p>
-      <p className="text-gray-800 font-semibold text-center text-xs md:text-sm">{detail}</p>
+    <div className="relative scale w-60 md:w-64 h-44 md:h-72 mb-10 opacity-90 hover:opacity-100 hover:scale-105 duration-500 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-4 md:p-6">
+      <img
+        src={image}
+        alt={name}
+        className="w-20 h-20 md:w-28 md:h-28 object-contain mb-4"
+      />
+      <p className="text-gray-800 font-semibold text-center text-sm md:text-lg">
+        {name}
+      </p>
+      <p className="text-gray-800 font-semibold text-center text-xs md:text-sm">
+        {detail}
+      </p>
+      <div className="flex gap-2 items-center justify-between absolute -bottom-8 w-full h-2 md:h-4 rounded-r-lg pr-2">
+      <p style={{ width: `${knowledge}` }} className="textBg h-full rounded-r-full"></p>
+      <p className="textZoom text-white font-thin">{knowledge}</p>
+      </div>
     </div>
   );
 }

@@ -184,3 +184,27 @@
     background-color: #e45fd4;
   }
 }
+
+.textZoom {
+  animation: zoom 1s linear infinite alternate;
+}
+@keyframes zoom {
+  to {
+    transform: scale(100%);
+  }
+  from {
+    transform: scale(120%);
+  }
+}
+.textBg {
+  animation: bgColor 2s linear infinite alternate;
+}
+@keyframes bgColor {
+  to {
+    background-color: #25e325;
+  }
+  from {
+    background-color: #5656ed;
+  }
+}
+

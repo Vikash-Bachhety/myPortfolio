@@ -10,7 +10,7 @@ function Footer() {
       <div className="container mx-auto flex flex-col items-center gap-8 px-4 md:px-0">
         <div className="text-center mb-8 md:mb-0">
           <h3 className="text-lg font-semibold mb-6 hover:border-b-2 h-10 tracking-wider">Follow Me</h3>
-          <div className="flex justify-center gap-x-10">
+          <div className="drops flex justify-center gap-x-10">
             <Link to="https://www.linkedin.com/in/vikash-bachhety/" className="text-white hover:text-gray-300 hover:scale-110"><img src={linkedin} alt="LinkedIn" className="w-10 h-10" /></Link>
             <Link to="https://github.com/Vikash-Bachhety" className="text-white hover:text-gray-300 hover:scale-110"><img src={github} alt="GitHub" className="w-10 h-10" /></Link>
             <Link to="https://bachhetyv@gmail.com" className="text-white hover:text-gray-300 hover:scale-110"><img src={gmail} alt="Gmail" className="w-10 h-10" /></Link>
