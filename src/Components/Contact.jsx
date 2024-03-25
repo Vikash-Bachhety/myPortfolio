@@ -38,6 +38,9 @@ function Contact() {
       setTimeout(() => {
         setSuccessMessage("");
       }, 800);
+      setEmail("");
+      setMessage("");
+      setName("");
     }
   };
 
