@@ -64,10 +64,10 @@ function Skills() {
 
   return (
     <div className="bg-gradient-to-r from-slate-950 to-blue-950 min-h-screen flex flex-col items-center justify-center px-4 md:px-20 overflow-hidden pb-10">
-      <h1 className="drops text-white font-extrabold tracking-widest text-3xl md:text-4xl mt-20 mb-6">
+      <h1 className="drops text-white font-extrabold tracking-widest text-3xl md:text-4xl mt-32 md:mt-32 mb-4">
         My Skills
       </h1>
-      <p className="textMove text-white font-medium tracking-wider text-base md:text-lg text-center px-4 mb-12 max-w-2xl">
+      <p className="textMove text-white font-medium tracking-wider text-base md:text-lg text-center px-4 mb-6 md:mb-12 max-w-2xl">
         Welcome to the Skills section, where I showcase the diverse range of
         tools and technologies I work with. Explore the cards below to learn
         more about my expertise.
@@ -77,7 +77,7 @@ function Skills() {
           <SkillCard key={startIndex + index} skill={skill} />
         ))}
       </div>
-      <div className="flex mt-6">
+      <div className="flex mt-8 justify-between gap-6">
         <button
           className={`ml-auto p-2 md:p-4 rounded-full ${
             startIndex === 0
@@ -109,7 +109,7 @@ function SkillCard({ skill }) {
   const { name, image, detail } = skill;
 
   return (
-    <div className="scale w-40 md:w-64 h-52 md:h-72 opacity-90 hover:opacity-100 hover:scale-110 duration-500 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-4 md:p-6">
+    <div className="scale w-58 md:w-64 h-44 md:h-72 opacity-90 hover:opacity-100 hover:scale-110 duration-500 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-4 md:p-6">
       <img src={image} alt={name} className="w-20 h-20 md:w-28 md:h-28 object-contain mb-4" />
       <p className="text-gray-800 font-semibold text-center text-sm md:text-lg">{name}</p>
       <p className="text-gray-800 font-semibold text-center text-xs md:text-sm">{detail}</p>

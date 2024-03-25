@@ -5,20 +5,41 @@ import "../Components/component.css";
 function About() {
   return (
     <section className="bg-gradient-to-r from-slate-800 to-gray-950 text-white py-12 md:py-20 min-h-screen w-full">
-      {/* Background balls */}
-      <div className="absolute animateLeftBalls w-16 h-16 rounded-full -z-10 opacity-20 md:w-32 md:h-32"></div>
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 md:px-20 mt-8 md:mt-14">
-        <div className="md:w-1/2 px-4 md:px-8">
-          <div className="relative w-full p-4 hover:border-2 rounded-t-full rounded-b-full border-blue-500 flex justify-center hover:-rotate-6">
-            <img className="scale rounded-t-full rounded-b-full border-4 border-blue-500 shadow-lg shadow-blue-300 w-full h-64 object-cover" src={profilePic} alt="Profile" />
+      <div className="container mx-auto flex flex-col md:flex-row items-center md:tracking-wide md:leading-10 justify-center px-4 md:px-20 mt-12 md:mt-20">
+        <div className="md:w-1/2 px-4 md:px-8 md:-mt-6">
+          <div className="relative w-full md:w-96 h-60 md:h-[500px] p-8 shadow-xl shadow-red-600 border-2 rounded-t-full rounded-b-full border-blue-500 flex justify-center mb-6 md:mb-0 hover:-rotate-6">
+            <img
+              className="scale rounded-t-full rounded-b-full border-4 border-blue-500 shadow-lg shadow-blue-300 w-full md:w-80 h-52 md:h-[500px] object-cover"
+              src={profilePic}
+              alt="Profile"
+            />
           </div>
         </div>
         <div className="md:w-1/2 text-center md:text-left p-4 md:p-5 leading-loose">
-          <h2 className="drops text-3xl md:text-4xl font-bold mb-2 md:mb-4">Hi, I'm <span className="text-cyan-500">Vikash Bachhety,</span></h2>
-          <p className="textMove text-base md:text-lg tracking-widest text-rose-500 mb-4 md:mb-8">Passionate Web Developer | Tech Enthusiast</p>
-          <p className="text-base text-gray-300 md:text-lg leading-relaxed hover:scale-105">I am a creative web developer with expertise in HTML, CSS, JavaScript, React, and more. I enjoy turning complex problems into simple, beautiful, and intuitive designs. With a strong background in computer science and a keen eye for detail, I am always eager to learn and explore new technologies. Apart from coding, I love photography, hiking, and exploring new cuisines.</p>
-          <div className="mt-4 md:mt-6">
-            <a href="/contact" className="inline-block bg-cyan-500 text-gray-900 py-2 md:py-3 px-4 md:px-6 rounded-full uppercase tracking-wider font-semibold hover:bg-rose-500 hover:text-gray-100 duration-300">Get in Touch</a>
+          <h2 className="drops text-3xl md:text-4xl font-bold mb-2 md:mb-4">
+            Hi, I'm <span className="text-cyan-500">Vikash Bachhety,</span>
+          </h2>
+          <p className="textMove text-base md:text-xl tracking-widest text-rose-500 mb-4 md:mb-10">
+            Passionate Web Developer | Tech Enthusiast
+          </p>
+          <p className="text-base text-gray-300 md:text-lg leading-loose">
+            Currently pursuing a Master's in Computer Applications with a keen
+            interest in crafting seamless and engaging user experiences through
+            front-end development. Proficient in HTML, CSS, and JavaScript,
+            with a focus on creating responsive and user-friendly web
+            interfaces. Acquainted with core Java and SQL for foundational
+            application development. Eager to explore and implement the latest
+            advancements in front-end technologies. Enthusiastically seeking
+            opportunities to contribute creativity and technical expertise to
+            dynamic projects that push the boundaries of user interface design.
+          </p>
+          <div className="mt-4 md:mt-12">
+            <a
+              href="/contact"
+              className="inline-block bg-cyan-500 text-gray-900 duration-500 py-2 md:py-3 px-4 md:px-6 rounded-full uppercase tracking-wider font-semibold hover:bg-rose-500 hover:text-gray-100"
+            >
+              Get in Touch
+            </a>
           </div>
         </div>
       </div>

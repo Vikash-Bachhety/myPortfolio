@@ -15,11 +15,10 @@ function Header() {
 
   return (
     <div className="fixed top-0 left-0 right-0 flex justify-between items-center tracking-wide bg-black bg-opacity-90 w-full text-white h-24 px-6 lg:px-20 z-20">
-      <div className="w-1/4 md:w-1/3 flex items-end gap-6">
+      <div className="w-1/4 md:w-1/3 flex items-end gap-2 md:gap-6">
         <img className="scale w-16 border-none rounded-full bg-transparent" src={user} alt="" />
-        <span className="text-cyan-500 textMove">bachhetyv@gmail.com</span>
+        <span className="textColor text-xl md:text-4xl text-white md:font-extrabold ">myPortfolio</span>
       </div>
-      {/* Hamburger icon for small screens */}
       <div className="md:hidden">
         <button onClick={toggleDropdown}>
           <svg
@@ -46,7 +45,6 @@ function Header() {
           </svg>
         </button>
       </div>
-      {/* Navigation links */}
       <ul className={`hidden md:flex gap-x-4 text-lg w-1/2 h-24 justify-around items-center ${showDropdown ? "hidden" : ""}`}>
         <Link to="/Home" className="w-24 text-center p-2 rounded-lg hover:bg-slate-300 hover:bg-opacity-20" onClick={closeDropdown}>Home</Link>
         <Link to="/About" className="w-24 text-center p-2 rounded-lg hover:bg-slate-300 hover:bg-opacity-20" onClick={closeDropdown}>About</Link>
@@ -54,7 +52,6 @@ function Header() {
         <Link to="/Projects" className="w-24 text-center p-2 rounded-lg hover:bg-slate-300 hover:bg-opacity-20" onClick={closeDropdown}>Projects</Link>
         <Link to="/Contact" className="w-24 text-center p-2 rounded-lg hover:bg-slate-300 hover:bg-opacity-20" onClick={closeDropdown}>Contact</Link>
       </ul>
-      {/* Dropdown menu for small screens */}
       {showDropdown && (
         <div className="absolute top-full left-0 bg-black bg-opacity-90 w-full py-2">
           <ul className="flex flex-col items-center">
