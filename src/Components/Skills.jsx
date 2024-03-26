@@ -68,11 +68,11 @@ function Skills() {
   };
 
   return (
-    <div className="bg-gradient-to-r from-slate-950 to-blue-950 min-h-screen flex flex-col items-center justify-center px-4 md:px-20 overflow-hidden pb-10">
-      <h1 className="drops text-white font-extrabold tracking-widest text-3xl md:text-4xl mt-32 md:mt-32 mb-4">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 md:px-20 overflow-hidden pb-10">
+      <h1 className="drops font-extrabold tracking-widest text-3xl md:text-4xl mt-32 md:mt-32 mb-4">
         My Skills
       </h1>
-      <p className="textMove text-white font-medium tracking-wider text-base md:text-lg text-center px-4 mb-6 max-w-2xl">
+      <p className="textMove font-medium tracking-wider text-base md:text-lg text-center px-4 mb-6 max-w-2xl">
         Welcome to the Skills section, where I showcase the diverse range of
         tools and technologies I work with. Explore the cards below to learn
         more about my expertise.
@@ -84,10 +84,10 @@ function Skills() {
       </div>
       <div className="flex mt-10 justify-between gap-6">
         <button
-          className={`ml-auto p-2 rounded-full ${
+          className={`ml-auto p-3 rounded-full ${
             startIndex === 0
-              ? "bg-gray-400 cursor-not-allowed"
-              : "bg-gray-300 hover:bg-gray-400"
+              ? "bg-gray-600 cursor-not-allowed"
+              : "bg-gray-500 hover:bg-gray-400"
           } focus:outline-none`}
           onClick={prevSkills}
           disabled={startIndex === 0}
@@ -95,10 +95,10 @@ function Skills() {
           {"<"}
         </button>
         <button
-          className={`mr-auto p-2 rounded-full ${
+          className={`mr-auto p-3 rounded-full ${
             startIndex >= skills.length - 4
-              ? "bg-gray-400 cursor-not-allowed"
-              : "bg-gray-300 hover:bg-gray-400"
+              ? "bg-gray-600 cursor-not-allowed"
+              : "bg-gray-500 hover:bg-gray-400"
           } focus:outline-none`}
           onClick={nextSkills}
           disabled={startIndex >= skills.length - 4}
@@ -114,21 +114,21 @@ function SkillCard({ skill }) {
   const { name, image, detail, knowledge } = skill;
 
   return (
-    <div className="relative scale w-60 md:w-64 h-44 md:h-72 mb-10 opacity-90 hover:opacity-100 hover:scale-105 duration-500 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center p-4 md:p-6">
+    <div className="relative scale w-64 h-52 border border-current md:h-72 mb-10 opacity-90 hover:opacity-100 hover:scale-105 duration-500 bg-bg rounded-xl shadow-lg flex flex-col items-center justify-center p-2 md:p-6">
       <img
         src={image}
         alt={name}
         className="w-20 h-20 md:w-28 md:h-28 object-contain mb-4"
       />
-      <p className="text-gray-800 font-semibold text-center text-sm md:text-lg">
+      <p className="text-center tracking-wider text-md md:text-lg">
         {name}
       </p>
-      <p className="text-gray-800 font-semibold text-center text-xs md:text-sm">
+      <p className="text-center tracking-wider text-md md:text-sm">
         {detail}
       </p>
       <div className="flex gap-2 items-center justify-between absolute -bottom-8 w-full h-2 md:h-4 rounded-r-lg pr-2">
       <p style={{ width: `${knowledge}` }} className="textBg h-full rounded-r-full"></p>
-      <p className="textZoom text-white font-thin">{knowledge}</p>
+      <p className="textZoom font-thin">{knowledge}</p>
       </div>
     </div>
   );

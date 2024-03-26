@@ -69,24 +69,24 @@
 }
 
 .scale {
-  animation: scale 0.8s linear infinite alternate;
+  animation: scale 2s linear infinite alternate;
 }
 
 @keyframes scale {
   0% {
-    box-shadow: 0 0 8px #61f5f5cb;
+    box-shadow: 0 0 12px #019b9bcb;
   }
   25% {
-    box-shadow: 0 0 8px #bbf889bc;
+    box-shadow: 0 0 12px #bbf889bc;
   }
   50% {
-    box-shadow: 0 0 8px #ffaa93cb;
+    box-shadow: 0 0 12px #b62903cb;
   }
   75% {
-    box-shadow: 0 0 8px #88ffffc6;
+    box-shadow: 0 0 12px #88ffffc6;
   }
   100% {
-    box-shadow: 0 0 8px #f399fdc8;
+    box-shadow: 0 0 12px #e531f9c8;
   }
 }
 
@@ -191,6 +191,7 @@
 @keyframes zoom {
   to {
     transform: scale(100%);
+    background: linear-gradient(#0f1420 #000000);
   }
   from {
     transform: scale(120%);
