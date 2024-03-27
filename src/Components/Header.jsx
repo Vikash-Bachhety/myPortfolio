@@ -7,7 +7,7 @@ import UseTheme from "./UseTheme";
 
 function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("darkP");
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
@@ -141,7 +141,7 @@ function Header() {
           </ul>
         </div>
       )}
-      <div className="absolute left-1/2 xl:left-1/3">
+      <div className="absolute left-1/2 md:left-80 lg:left-1/3">
         <ThemeProvider value={{ theme, toggleTheme }}>
           <UseTheme />
         </ThemeProvider>
