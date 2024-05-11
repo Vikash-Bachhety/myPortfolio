@@ -20,16 +20,16 @@ function Footer() {
         <div className="flex flex-col items-center md:items-start">
           <h3 className="text-lg font-semibold mb-4">Contact</h3>
           <p className="mb-2">Email: bachhetyv@gmail.com</p>
-          <p className="mb-2">Phone: +91xxxxxxxxxx</p>
+          {/* <p className="mb-2">Phone: +91xxxxxxxxxx</p> */}
           <p>Address: Dehra Dun, IND</p>
         </div>
         <div className="flex flex-col mt-10 md:mt-0 items-center md:items-start">
           <h3 className="text-lg font-semibold mb-4">Useful Links</h3>
-          <ul className="list-disc pl-4">
-            <li><Link to="/About">About Me</Link></li>
-            <li><Link to="/Skills">Skills</Link></li>
-            <li><Link to="/Projects">Projects</Link></li>
-            <li><Link to="/Contact">Connect</Link></li>
+          <ul className="pl-4 list-none">
+            <li className="hover:text-blue-300 hover:text-lg"><Link to="/About">About Me</Link></li>
+            <li className="hover:text-blue-300 hover:text-lg"><Link to="/Skills">Skills</Link></li>
+            <li className="hover:text-blue-300 hover:text-lg"><Link to="/Projects">Projects</Link></li>
+            <li className="hover:text-blue-300 hover:text-lg"><Link to="/Contact">Connect</Link></li>
           </ul>
         </div>
       </div>
