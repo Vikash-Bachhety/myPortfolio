@@ -3,7 +3,7 @@ import img1 from "../assets/bg/1.jpg";
 import img2 from "../assets/bg/2.jpg";
 import img3 from "../assets/bg/3.jpg";
 import img4 from "../assets/bg/4.jpg";
-import img5 from "../assets/bg/5.jpg";
+// import img5 from "../assets/bg/5.jpg";
 import img6 from "../assets/bg/6.jpg";
 
 function Projects() {
@@ -39,15 +39,15 @@ function Projects() {
       image: img4,
       visiterLink: "https://api-galaxy-website.vercel.app/",
       githubLink: "https://github.com/Vikash-Bachhety/API-Galaxy"
-    },
-    {
-      title: "MemoSage`",
-      Technologies:
-                  "Node.js, Express.js, EJS, Mongoose",
-      image: img5,
-      visiterLink: "https://memosage-production.up.railway.app/",
-      githubLink: "https://github.com/Vikash-Bachhety/memoSage"
-    },
+    // },
+    // {
+    //   title: "MemoSage`",
+    //   Technologies:
+    //               "Node.js, Express.js, EJS, Mongoose",
+    //   image: img5,
+    //   visiterLink: "https://memosage-production.up.railway.app/",
+    //   githubLink: "https://github.com/Vikash-Bachhety/memoSage"
+    // },
     {
       title: "Blog-cards",
       Technologies:
