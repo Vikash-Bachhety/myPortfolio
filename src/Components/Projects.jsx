@@ -39,7 +39,7 @@ function Projects() {
       image: img4,
       visiterLink: "https://api-galaxy-website.vercel.app/",
       githubLink: "https://github.com/Vikash-Bachhety/API-Galaxy"
-    // },
+    },
     // {
     //   title: "MemoSage`",
     //   Technologies:
