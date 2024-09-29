@@ -5,6 +5,7 @@ import img3 from "../assets/bg/3.jpg";
 import img4 from "../assets/bg/4.jpg";
 // import img5 from "../assets/bg/5.jpg";
 import img6 from "../assets/bg/6.jpg";
+import img7 from "../assets/bg/7.jpg";
 
 function Projects() {
   const [projects, setProjects] = useState([
@@ -60,7 +61,7 @@ function Projects() {
       title: "Springboot BlogApp",
       Technologies:
                   "Tailwind, React, React-router, SpringBoot, Spring JPA, MySQL",
-      image: img6,
+      image: img7,
       visiterLink: "https://frontend-java-blog-app.vercel.app/",
       githubLink: "https://github.com/Vikash-Bachhety/backend_java_blogApp"
     },
