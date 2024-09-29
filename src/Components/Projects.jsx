@@ -56,6 +56,14 @@ function Projects() {
       visiterLink: "https://blog-with-cards.vercel.app/",
       githubLink: "https://github.com/Vikash-Bachhety/Blog"
     },
+    {
+      title: "Springboot BlogApp",
+      Technologies:
+                  "Tailwind, React, React-router, SpringBoot, Spring JPA, MySQL",
+      image: img6,
+      visiterLink: "https://frontend-java-blog-app.vercel.app/",
+      githubLink: "https://github.com/Vikash-Bachhety/backend_java_blogApp"
+    },
   ]);
 
   return (
