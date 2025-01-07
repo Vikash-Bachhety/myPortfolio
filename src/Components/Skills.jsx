@@ -5,6 +5,8 @@ import javascript from "../assets/logos/javascript.png";
 import react from "../assets/logos/react.png";
 import node from "../assets/logos/node.png";
 import mongoose from "../assets/logos/mongoose.png";
+import express from "../assets/logos/Express.png";
+import nextjs from "../assets/logos/Next.png";
 
 function Skills() {
   const skills = [
@@ -30,14 +32,14 @@ function Skills() {
       color: "#F0DB4F",
       detail:
         "JavaScript is the programming language used to make web pages interactive.",
-      knowledge: "70%",
+      knowledge: "85%",
     },
     {
-      name: "React",
+      name: "React.js",
       image: react,
       color: "#61DAFB",
       detail: "React is a JavaScript library for building user interfaces.",
-      knowledge: "60%",
+      knowledge: "80%",
     },
     {
       name: "Node.js",
@@ -48,12 +50,28 @@ function Skills() {
       knowledge: "60%",
     },
     {
+      name: "Express.js",
+      image: express,
+      color: "#68A063",
+      detail:
+        "A minimalist Node.js web application framework for building robust APIs and server-side applications.",
+      knowledge: "85%",
+    },
+    {
       name: "Mongoose",
       image: mongoose,
       color: "#47A248",
       detail:
         "Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js.",
       knowledge: "65%",
+    },
+    {
+      name: "Next.js",
+      image: nextjs,
+      color: "#47A248",
+      detail:
+        "A React-based framework for building server-rendered and static web applications.",
+      knowledge: "50%",
     },
   ];
 
@@ -84,22 +102,20 @@ function Skills() {
       </div>
       <div className="flex mt-10 justify-between gap-6">
         <button
-          className={`ml-auto p-3 rounded-full ${
-            startIndex === 0
+          className={`ml-auto p-3 rounded-full ${startIndex === 0
               ? "bg-gray-600 cursor-not-allowed"
               : "bg-gray-500 hover:bg-gray-400"
-          } focus:outline-none`}
+            } focus:outline-none`}
           onClick={prevSkills}
           disabled={startIndex === 0}
         >
           {"<"}
         </button>
         <button
-          className={`mr-auto p-3 rounded-full ${
-            startIndex >= skills.length - 4
+          className={`mr-auto p-3 rounded-full ${startIndex >= skills.length - 4
               ? "bg-gray-600 cursor-not-allowed"
               : "bg-gray-500 hover:bg-gray-400"
-          } focus:outline-none`}
+            } focus:outline-none`}
           onClick={nextSkills}
           disabled={startIndex >= skills.length - 4}
         >
@@ -114,12 +130,14 @@ function SkillCard({ skill }) {
   const { name, image, detail, knowledge } = skill;
 
   return (
-    <div className="relative scale w-64 h-52 border border-current md:h-72 mb-10 opacity-90 hover:opacity-100 hover:scale-105 duration-500 bg-bg rounded-xl shadow-lg flex flex-col items-center justify-center p-2 md:p-6">
-      <img
-        src={image}
-        alt={name}
-        className="w-20 h-20 md:w-28 md:h-28 object-contain mb-4"
-      />
+    <div className="relative scale w-64 h-52 border border-current md:h-72 mb-10 opacity-90 hover:opacity-100 hover:scale-105 duration-500 bg-bg rounded-xl shadow-lg flex flex-col items-center justify-center p-2">
+      <div className="w-full h-full items-center bg-sky-50 flex justify-center">
+        <img
+          src={image}
+          alt={name}
+          className="w-20 h-20 md:w-28 md:h-28 object-contain mb-4"
+        />
+      </div>
       <p className="text-center tracking-wider text-md md:text-lg">
         {name}
       </p>
@@ -127,8 +145,8 @@ function SkillCard({ skill }) {
         {detail}
       </p>
       <div className="flex gap-2 items-center justify-between absolute -bottom-8 w-full h-2 md:h-4 rounded-r-lg pr-2">
-      <p style={{ width: `${knowledge}` }} className="textBg h-full rounded-r-full"></p>
-      <p className="textZoom font-thin">{knowledge}</p>
+        <p style={{ width: `${knowledge}` }} className="textBg h-full rounded-r-full"></p>
+        <p className="textZoom font-thin">{knowledge}</p>
       </div>
     </div>
   );

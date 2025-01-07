@@ -6,13 +6,15 @@ import img4 from "../assets/bg/4.jpg";
 // import img5 from "../assets/bg/5.jpg";
 import img6 from "../assets/bg/6.jpg";
 import img7 from "../assets/bg/7.jpg";
+import img8 from "../assets/bg/8.jpg";
+import img9 from "../assets/bg/9.jpg";
 
 function Projects() {
   const [projects, setProjects] = useState([
     {
       title: "E-Commerce UI Replica",
       Technologies:
-                  "HTML, CSS",
+        "HTML, CSS",
       image: img2,
       visiterLink: "https://amazon-replica-gamma.vercel.app/",
       githubLink: "https://github.com/Vikash-Bachhety/EthicalEcommerceDemo"
@@ -20,7 +22,7 @@ function Projects() {
     {
       title: "Theme Changer",
       Technologies:
-                  "HTML, CSS, Tailwind, React",
+        "HTML, CSS, Tailwind, React",
       image: img1,
       visiterLink: "https://theme-mode-seven.vercel.app/",
       githubLink: "https://github.com/Vikash-Bachhety/ThemeMode"
@@ -28,7 +30,7 @@ function Projects() {
     {
       title: "Sangeet-music website",
       Technologies:
-                  "HTML, CSS, JS, Tailwind",
+        "HTML, CSS, JS, Tailwind",
       image: img3,
       visiterLink: "https://sangeet-xi.vercel.app/",
       githubLink: "https://github.com/Vikash-Bachhety/Sangeet"
@@ -36,7 +38,7 @@ function Projects() {
     {
       title: "API-Galaxy",
       Technologies:
-                  "HTML, CSS, Tailwind, React, React-router",
+        "HTML, CSS, Tailwind, React, React-router",
       image: img4,
       visiterLink: "https://api-galaxy-website.vercel.app/",
       githubLink: "https://github.com/Vikash-Bachhety/API-Galaxy"
@@ -52,7 +54,7 @@ function Projects() {
     {
       title: "Blog-cards",
       Technologies:
-                  "Tailwind, React, React-router, Node.js, Express.js, Mongoose",
+        "Tailwind, React, React-router, Node.js, Express.js, Mongoose",
       image: img6,
       visiterLink: "https://blog-with-cards.vercel.app/",
       githubLink: "https://github.com/Vikash-Bachhety/Blog"
@@ -60,10 +62,26 @@ function Projects() {
     {
       title: "Springboot BlogApp",
       Technologies:
-                  "Tailwind, React, React-router, SpringBoot, Spring JPA, MySQL",
+        "Tailwind, React, React-router, SpringBoot, Spring JPA, MySQL",
       image: img7,
       visiterLink: "https://frontend-java-blog-app.vercel.app/",
       githubLink: "https://github.com/Vikash-Bachhety/backend_java_blogApp"
+    },
+    {
+      title: "Omnimart",
+      Technologies:
+        "Tailwind, React, React-router, Node.js, Express.js MongoDB",
+      image: img8,
+      visiterLink: "https://omnimart-ecom.vercel.app/",
+      githubLink: "https://github.com/vikashi3/Omnimart"
+    },
+    {
+      title: "Eventify",
+      Technologies:
+        "Next.js, Express.js, MongoDB, Tailwind",
+      image: img9,
+      visiterLink: "https://eventifymanagement-web.vercel.app/",
+      githubLink: "https://github.com/Vikash-Bachhety/Eventify"
     },
   ]);
 
@@ -89,8 +107,8 @@ function ProjectCard({ project }) {
   const { title, Technologies, image, visiterLink, githubLink } = project;
 
   return (
-    <div className="scale border border-current rounded-xl w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-      <div className="h-72 shadow-lg overflow-hidden transform transition-transform hover:scale-105 duration-500">
+    <div className="scale border border-0.5 rounded-xl w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2">
+      <div className="h-80 shadow-lg overflow-hidden transform transition-transform hover:scale-105 duration-500">
         <img src={image} alt={title} className="w-full h-1/2 rounded-xl p-1 object-cover" />
         <div className="p-4">
           <h2 className="font-normal text-xl mb-2">{title}</h2>

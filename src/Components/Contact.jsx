@@ -45,9 +45,9 @@ function Contact() {
   };
 
   return (
-    <section className="contact-section py-8 min-h-screen lg:py-12 flex justify-center">
-      <div className="flex flex-col items-center w-full mx-auto px-4 mt-24 lg:mt-24 lg:w-4/5">
-        <h2 className="drops hover:border-b-2 h-10 lg:h-12 text-2xl lg:text-3xl font-bold  md:mb-2 text-center">
+    <section className="contact-section min-h-screen lg:py-12 flex justify-center items-center">
+      <div className="flex flex-col items-center w-full mx-auto px-4 lg:w-4/5">
+        <h2 className="drops hover:border-b-2 h-10 lg:h-12 text-2xl lg:text-5xl font-bold md:mb-5 text-center">
           Get In Touch
         </h2>
 

@@ -17,9 +17,9 @@ function Home() {
 
       <div className="z-10 max-w-4xl flex flex-col items-center mt-12 md:mt-20 text-center">
         <h2 className="drops text-3xl md:text-4xl lg:text-5xl  font-extrabold tracking-wider mb-8 md:mb-4">Hi, I'm Vikash</h2>
-        <h1 className="rightMove text-4xl md:text-5xl lg:text-7xl  font-extrabold tracking-widest mb-10 md:mb-6">Web Developer</h1>
+        <h1 className="rightMove text-4xl md:text-5xl lg:text-7xl  font-extrabold tracking-widest mb-10 md:mb-6">Software Developer</h1>
         <p className="textMove text-md md:text-lg lg:text-xl  font-light mb-16 md:mb-12">
-        Aspiring Front-End Developer | MCA Candidate | HTML, CSS, JavaScript Enthusiast
+        Full Stack Developer | MERN Stack | MCA Candidate
         </p>
         <div className="flex flex-col items-center gap-6 md:gap-12 z-20">
           <button onClick={handleDownload} className="w-52 md:w-72 px-4 md:px-6 py-3 md:py-4 border duration-300  hover:bg-green-500 bg-rose-500 border-white rounded-lg text-lg md:text-xl lg:text-2xl text-white font-semibold mb-4 md:mb-0">Download CV</button>

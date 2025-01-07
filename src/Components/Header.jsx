@@ -29,9 +29,6 @@ function Header() {
           src={user}
           alt=""
         />
-        <span className="textColor hidden sm:block text-xl md:text-4xl text-white md:font-extrabold ">
-          myPortfolio
-        </span>
       </div>
       <div className="md:hidden">
         <button onClick={toggleDropdown}>
